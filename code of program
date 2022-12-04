@@ -1,0 +1,9 @@
+
+import pyttsx3
+voice_id = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_ZIRA_11.0"
+friend = pyttsx3.init()
+friend.setProperty('rate',50)
+friend.setProperty('voice',voice_id)
+speech = input("some something: ")
+friend.say(speech)
+friend.runAndWait()
